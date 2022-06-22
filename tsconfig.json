@@ -19,10 +19,5 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
-  },
-  "include": [
-    "src",
-    "custom.d.ts",
-  ],
-  "files": ["custom.d.ts"]
+  }
 }
