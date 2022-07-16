@@ -1,0 +1,131 @@
+:root {
+ --main-color: rgb(195, 11, 146);
+ --bg-color: rgba(255, 255, 255, 0.92);
+ --secondary-color:rgb(200, 83, 169);
+ --text-color: rgba(93, 90, 90, 0.872);
+ --secondary-text-color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color)
+}
+
+i {
+    margin: 0 5px;
+}
+
+.root {
+    height: 100%;
+}
+
+.App {
+height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.header {
+padding: 10px;
+display: flex;
+justify-content: center;
+background-color: var(--main-color);
+color: var(--secondary-text-color);
+}
+
+.footer {
+    padding: 3px 10px;
+    display: flex;
+    justify-content: end;
+    background-color: var(--main-color);
+    color: var(--secondary-text-color);
+    font-size: 0.8rem;
+}
+
+.form {
+    padding: 1rem;
+}
+
+.form input[type='text'] {
+    outline: none;
+    width: 90%;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+.form input[type='text']:focus  {
+   border-color: var(--main-color);
+}
+
+.form input[type='submit'] {
+    padding: 7px 10px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.form input[type='submit']:hover {
+    background-color: var(--secondary-color);
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid var(--main-color);
+    margin-top: 1rem;
+}
+
+.card i {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.card i:hover {
+    color: var(--main-color);
+}
+
+.card-text {
+    display: flex;
+}
+
+.custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 1px solid var(--main-color);
+    margin-right: 5px;
+}
+
+.custom-checkbox:not(:disabled):checked+label::before {
+    background-color: var(--secondary-color);
+  }
