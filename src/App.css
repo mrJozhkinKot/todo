@@ -105,6 +105,10 @@ color: var(--secondary-text-color);
     display: flex;
 }
 
+.card-text--cross {
+    text-decoration: line-through;
+}
+
 .custom-checkbox {
     position: absolute;
     opacity: 0;
